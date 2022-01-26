@@ -22,7 +22,7 @@ Object-Oriented Programming
 * 속성 (attribute) : 어떤 상태(데이터)를 가지는가?
 * 기능 (method) : 어떤 행위(함수)를 할수 있는가?
 
-![image-20220126093453878](C:\Users\mihyu\AppData\Roaming\Typora\typora-user-images\image-20220126093453878.png)
+![image-20220126093453878](OOP.assets/image-20220126093453878.png)
 
 #### 객체지향 프로그래밍
 
