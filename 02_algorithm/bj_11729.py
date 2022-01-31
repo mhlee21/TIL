@@ -16,9 +16,12 @@ ret = []
 
 def solve(n, a, b, c):
     if n == 1:
+        print('+', a, c)
         ret.append([a, c])
     else:
+        print('[',n,a,b,c,']')
         solve(n-1, a, c, b)
+        print('++', a, c)
         ret.append([a, c])
         solve(n-1, b, a, c)
 
