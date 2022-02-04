@@ -16,6 +16,7 @@
 * Hyper Text Markup Language
   * Hyper Text : 참조(하이퍼링크)를 통해 사용자가 한 문서에서 다른 문서로 즉시 접근할 수 있는 텍스트
   * Markup Language : 태그 등을 이용하여 문서나 데이터의 구조를 명시하는 언어
+    * ex) HTML, Markdown
 
 ## HTML 기본 구조
 
@@ -66,7 +67,17 @@
 >
 > 사용법 검색 시 사용
 
-### 시맨틱 태그
+#### HTML Global Attribute
+
+* 모든 HTML 요소가 사용할 수 있는 대표적인 속성 (몇몇 요소에는 아무 효과가 없을 수 있음)
+* ⭐id : 문서 전체에서 유일한 고유 식별자 지정
+* ⭐class : 공백으로 구분된 해당 요소의 클래스 목록 (CSS, JS 에서 요소를 선택하거나 접근)
+* data-* : 페이지에 개인 사용자 정의 데이터를 저장하기 위해 사용
+* style : inline 스타일
+* title : 요소에 대한 추가 정보 지정
+* tabindex : 요소의 탭 순서
+
+### 시맨틱 태그⭐
 
 * **HTML5 에서 의미론적 요소를 담은 태그의 등장**
   * 기존 영역을 의미하는 div 태그를 대체하여 사용
@@ -158,10 +169,23 @@
 * name : form control 에 적용되는 이름 (이름/값 페어로 전송됨)
 * value : form control 에 적용되는 값 (이름/값 페어로 전송됨)
 * required, readonly, autofocus, autocomplete, disabled : 단일 속성(속성 값 없이 속성 명만 있어도 동작함)
+* `<input type="submit">`
+  * 사용할 수 있는 type 에는 text, password, email, number, file, checkbod, radio 등등이 있음
 
-* `<input type="submit">` : 
 
+* input label
 
+  * label을 클릭하여 input 자체의 초점을 맞추거나 활성화 시킬 수 있음
+  * 사용자는 선택할 수 있는 영역이 늘어나 웹/모바일(터치) 환경에서 편하게 사용할 수 있음
+  * label  과 input 입력의 관계가 시각적 뿐만 아니라 화면 리더기에서도 label 을 읽어 쉽게 내용을 확인할 수 있도록 함
+  * `<input>`에 id 속성을, `<label>`에는 for 속성을 활용하여 상호 연관을 시킴
+
+  ```HTML
+  <label for="agreement">개인 정보 수집에 동의합니다.</label>
+  <input type="checkbox" name="agreement" id="agreement">
+  ```
+
+   
 
 # CSS
 
