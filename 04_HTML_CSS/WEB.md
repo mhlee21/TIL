@@ -345,6 +345,8 @@
 
   > ⭐⭐⭐*relative 와 absolute 차이 중요*
 
+  * static
+    * position 지정하지 않은 상태
   * relative
     * 상대위치
     * **내 자리 유지**
