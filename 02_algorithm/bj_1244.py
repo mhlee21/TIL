@@ -32,4 +32,5 @@ for s in student:
                 break
             i += 1
 
-print(*switch_status[1:])
+for status in switch_status[1:]:
+    print(status)
