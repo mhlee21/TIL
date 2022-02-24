@@ -1,11 +1,5 @@
 # 👩‍🏫 TIL (Today I Learned)
 
-
-
-1. [CLI 사용하기](startcamp/CLI.md)
-
-1. [마크다운 사용](startcamp/마크다운.md)
-
-1. [git](startcamp/git.md)
-
-   
+👉 새로운 TIL 주소 (2022.02~)
+* github : https://github.com/mhlee21/mhlee21.github.io
+* link : https://mhlee21.github.io/
