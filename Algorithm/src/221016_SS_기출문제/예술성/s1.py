@@ -37,7 +37,7 @@ for test_case in range(1, T + 1):
         for i in range(N):
             for j in range(N):
                 if not visited[i][j]:
-                    visited[i][j] == True
+                    visited[i][j] = True
                     g_num += 1
                     group[i][j] = g_num     # 그룹 번호 매기기
                     group_list[g_num] = 1   # 그룹별 갯수 구하기
@@ -56,10 +56,6 @@ for test_case in range(1, T + 1):
                     gnum1, gnum2 = group[i][j], group[ni][nj]
                     gcnt1, gcnt2 = group_list[gnum1], group_list[gnum2]
                     score += (gcnt1 + gcnt2) * arr[i][j] * arr[ni][nj]
-        pprint(arr)
-        pprint(group)
-        print(group_list)
-        print(score//2)
         return score // 2 # 중복계산 제외
 
 
@@ -78,7 +74,7 @@ for test_case in range(1, T + 1):
             for i in range(si, si+slen):
                 for j in range(sj, sj+slen):
                     ni, nj = i-si, j-sj                     # 좌표 기준을 0,0으로 변환
-                    ri, rj = nj, slen-1-i                   # 90도 회전
+                    ri, rj = nj, slen-1-ni                   # 90도 회전
                     arr_out[ri+si][rj+sj] = arr_in[i][j]    # 원래자리에 값 넣기
 
         square_len = N//2
