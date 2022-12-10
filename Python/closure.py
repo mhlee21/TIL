@@ -34,10 +34,22 @@ def trace(func): # 함수 안에서 함수를 만들고 반환하는 클로저
         print(func.__name__, '함수 끝')
     return wrapper
 
+def trace2(func): # 함수 안에서 함수를 만들고 반환하는 클로저
+    def wrapper():
+        print(func.__name__, '함수 시작2')
+        func()
+        print(func.__name__, '함수 끝2')
+    return wrapper
+
 @trace
+@trace2
 def hello():
     print('안녕하세요')
 
 # trace_hello = trace(hello)
 # trace_hello()
 hello()
+
+def foo(a: dict={}):
+    if 'x' not in a.keys():
+        

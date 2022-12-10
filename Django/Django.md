@@ -77,7 +77,7 @@ Django is a high-level ***Python web framework*** that encourages rapid developm
 |    **V**iew    | **T**emplate |
 | **C**ontroller |   **V**iew   |
 
-![image-20220302092304849](image-20220302092304849.png)
+![image-20220302092304849](Django/image-20220302092304849.png)
 
 
 
@@ -149,7 +149,7 @@ sqlparse   0.4.2
 * `python manage.py runserver`
 * http://127.0.0.1:8000/ 접속 시 다음과 같은 창 뜨면 서버 정상적으로 활성화 된 것
 
-![image-20220302095613562](image-20220302095613562.png)
+![image-20220302095613562](Django/image-20220302095613562.png)
 
 ### 프로젝트 구조⭐
 
